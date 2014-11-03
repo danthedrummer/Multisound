@@ -1,0 +1,158 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+	<title> Multi-sound Venue - Bookings </title>
+		<link	rel="stylesheet" 
+				type="text/css" 
+				href="css/style.css"
+		/>
+		<script src="js/jq.js"></script>
+		<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+	
+	</head>
+	<body>		
+	<div ="top"></div>
+		<div id="wrapper">
+			<div id="header">		<!--header-->
+				<a href="#bottom">bottom</a>
+					
+					<img id="transparent" src="images/transparent.png" usemap="#newsletter" alt="Newsletter"/>
+					<map name="newsletter">
+						<area id="newsmap" shape="rect" coords="619,98,863,135" href="javascript:void(null);" onClick="#newsletterdiv" alt="Newsletter">
+					</map>
+
+			</div>	
+				<div id="navbar">	<!--nav bar-->
+					<ul>
+						<li><a href="index.html">HOME</a></li>
+						<li><a href="services.html">SERVICES</a></li>
+						<li><a href="gallery.html">GALLERY</a></li>
+						<li><a href="shows.html">SHOWS</a></li>
+						<li><a href="facilities.html">FACILITIES</a></li>
+						<li><a href="bookings.html">BOOKINGS</a></li>	
+					</ul>	
+
+				</div>			
+					<div id="main">		<!--main content-->
+						<div id="insidemain">
+							<h2 class="flag">Your Music, Your Way </h2>		<!--inside main content -->
+							<p>
+							<img class= "shadowbox" src="images/sounddesk.png" style="width:102px;height:114px" /> 
+							Private recording sessions in our market leading recording studio 
+							with our highly trained sound engineers. Our Yamaha Pro audio system 
+							is suitable for all genres of music.
+							</p>
+							<p>
+							<img class= "shadowbox1" src="images/arena.png " style="width:102px;height:114px"/> 
+							Private recording sessions in our market leading recording studio 
+							Enjoy our state of the art  three tiered performance hall, ideal 
+							for all music and theatre events. With a capacity of over 3,000, we 
+							are available for small intimate events and for those big         
+							performances too. Check out our schedule for available dates or contact 
+							our ticket desk for ticket availability on upcoming events.
+							</p>
+							<p>At National College of Ireland we are committed to making your learning 
+							experience as enjoyable and beneficial as possible. We have a dedicated range 
+							of student support services to help you through your course and encourage you 
+							to get involved with your very active Students’ Union for information on social 
+							activities available to you as an NCI student.
+							</p>
+						</div>
+					</div>
+						<div id="side">
+						<a id="advert" class="advert" href="http://www.youtube.com/user/cogee" target="_blank"><img class= "" alt="" src="" style /></a>
+
+						</div>
+						<div class="box">					<!--inside boxes -->
+							<h3 class="flag">NOW ON </h3>		<!--inside main content -->
+							<img class= "shadowbox2" alt="Now On" src="images/st.jpg" style /> 
+							<p>
+							At National College of Ireland we are committed to making your learning 
+							experience as enjoyable and beneficial as possible. We have a dedicated range 
+							of student support services to help you through your course and encourage you 
+							to get involved with your very active Students’
+							</p>
+						</div>
+						<div class="box">					<!--inside boxes -->
+							<h3 class="flag">UPCOMING SHOWS </h3>		<!--inside main content -->
+							<img class= "shadowbox2" alt="Upcoming Shows" src="images/nae.jpg" style /> 
+							<p>
+							At National College of Ireland we are committed to making your learning 
+							experience as enjoyable and beneficial as possible. We have a dedicated range 
+							of student support services to help you through your course and encourage you 
+							to get involved with your very active Students’
+							</p>
+						</div>
+						<div class="box">					<!--inside boxes -->
+							<h3 class="flag">SERVICES </h3>		<!--inside main content -->
+							<img class= "shadowbox2" alt="Services" src="images/services.jpg" style /> 
+							<p>
+							At National College of Ireland we are committed to making your learning 
+							experience as enjoyable and beneficial as possible. We have a dedicated range 
+							of student support services to help you through your course and encourage you 
+							to get involved with your very active Students’
+							</p>
+						</div>
+						<div id="footer">						<!--footer-->
+							<div class="footer">	
+									<a class="footer">	
+									<li><a href="index.html">HOME</a></li>
+									<li><a href="services.html">SERVICES</a></li>
+									<li><a href="gallery.html">GALLERY</a></li>
+									<li><a href="shows.html">SHOWS</a></li>
+									<li><a href="facilities.html">FACILITIES</a></li>
+									<li><a href="bookings.html">BOOKINGS</a></li>	
+							</div>
+						</div><!--end of branding-->
+					<a class ="top" href="#top">top</a>
+				</div>				
+																	<!-- Newsletter Form [DD]-->
+				<div id="newsletterdiv">
+					<form class="form" action="#" id="newsletter">
+					<h2>Newsletter</h2>
+					<label>Name: *</label>
+						<input type="text" id="name" placeholder="Name"/><br><br/>
+					<label>Email: *</label>
+						<input type="text" id="email" placeholder="Email"/><br><br/>
+					<input type="button" id="send" value="Send"/>
+					<input type="button" id="cancel" value="Cancel"/>
+					<br/>
+					</form>
+				</div>
+				
+		</div>	
+				<div id="smedia">	
+					<a id="twitter" class="smedialinks" href="http://www.twitter.com"  target="_blank"><img  class= "smedia" alt="Twitter" src="images/twitter.png" style /></a> 
+					<a class="smedialinks" href="http://www.facebook.com" target="_blank"><img  class= "smedia" alt="Facebook" src="images/facebook.png" style /></a>
+					<a class="smedialinks" href="http://www.linkedin.com" target="_blank"><img  class= "smedia" alt="LinkedIn" src="images/linkedin.png" style  /></a>
+					<a id="instagram" class="smedialinks" href="http://www.instagram.com" target="_blank"><img class= "smedia" alt="Instagram" src="images/insta.png" style /></a>
+				</div>
+			<div id="copyright">Copyright GIDD Creations 2014, All Rights Reserved </div>
+			<div id="bottom">
+			</div>
+
+				<script> $(function() {
+			  $('a[href*=#]:not([href=#])').click(function() {
+				if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+				  var target = $(this.hash);
+				  target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+				  if (target.length) {
+					$('html,body').animate({
+					  scrollTop: target.offset().top
+					}, 1000);
+					return false;
+				  }
+				}
+			  });
+			});
+			
+			$('body').fadeIn(1000);
+			
+			$("#newsmap").click(function(){
+			$("#newsletterdiv").fadeIn(1000);
+			$("#newsletterdiv").css("display", "block");
+			});
+		</script>
+	</body>
+</html>
