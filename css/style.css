@@ -7,6 +7,28 @@ body															/*<----Layout---->*/
 	font-family: Verdana, Geneva , sans-serif;
 	font-size: 12px;
 }
+#greetingParent
+{
+	border-radius:5px;
+	box-shadow:0 0 15px;
+	margin:20px 250px 0 35px;
+	font-size:14px;
+	font-weight:bold;
+	color:white;
+	
+	height: 110px;
+	width:400px;
+	background: #0c0b24;
+	
+	position:fixed;
+	bottom:-10px;
+	left:-350px;
+	text-align:right;
+}
+#greetingMessage
+{
+	float:right;
+}
 #wrapper
 {
 	background: white;
