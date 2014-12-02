@@ -26,7 +26,26 @@
 			});
 
 		});
-	</script>
+
+			//---------------DD-------------
+			function onBlur(field) 
+			{
+				if (field.value == '') 
+				{
+					field.value = field.defaultValue;
+				}
+				
+			}
+			function onFocus(field) 
+			{
+				if (field.value == field.defaultValue) 
+				{
+					field.value = '';
+				}
+			}
+			//---------------DD-------------
+		
+		</script>
 	</head>
 	<body>		
 	<div id="top"></div>
@@ -218,6 +237,16 @@
 			$("#newsletterdiv").fadeIn(1000);
 			$("#newsletterdiv").css("display", "block");
 			});
+			
+				$("#contactclick").click(function(){
+				$("#contactForm").fadeIn(1000);
+				$("#contactForm").css("display", "block");
+				});
+			
+					$("#bookingsclick").click(function(){
+					$("#bookingsForm").fadeIn(1000);
+					$("#bookingsForm").css("display", "block");
+					});
 		</script>
 	</body>
 </html>

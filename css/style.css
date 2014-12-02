@@ -556,3 +556,111 @@ a.hovertext:hover, a.hovertext:active {
   }
 
 /*-----------------------(DOS)---------------------------------*/
+
+/*-----------------------Enquiries page (DD)-----------------------*/
+textarea:focus {
+  color: black;
+}
+
+textarea {
+  color: #979797;
+}
+
+
+#contactDiv
+{
+	width:80%;	
+	height:100%;
+	background:;
+	padding:0px;
+	margin:0 auto;
+	margin-top:50px;
+	text-align:justify;
+	font-size:22px;
+}
+#contactButton
+{
+	width:150px;
+	margin-top:50px;
+	margin-left:auto;
+	margin-right:auto;	
+}
+#contactForm
+{
+	background: rgba(5,5,16,0.92);
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	height: 100%;
+	width: 100%;
+	display: none;
+	position:fixed;	
+}
+#contact
+{
+	width:350px;
+	margin:0px;
+	background-color:#0c0b24;
+	position: relative;
+	border: 5px solid white;
+	left: 50%;
+	top: 50%;
+	margin-left:-210px;
+	margin-top:-255px;
+}
+
+#bookingsDiv
+{
+	width:80%;
+	height:100%;
+	background:;	
+	padding:0px;
+	margin:0 auto;
+	margin-top:50px;
+	text-align:justify;
+	font-size:22px;
+}
+#bookingsButton
+{
+	width:150px;
+	margin-top:50px;
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+}
+#bookingsForm
+{
+	background: rgba(5,5,16,0.92);
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	height: 100%;
+	width: 100%;
+	display: none;
+	position:fixed;
+}
+#bookings
+{
+	width:380px;
+	margin:0px;
+	background-color:#0c0b24;
+	position: relative;
+	border: 5px solid white;
+	left: 50%;
+	top: 50%;
+	margin-left:-225px;
+	margin-top:-320px;
+}
+.bookingsButtons
+{
+	height:15px;
+	width:15px;
+}
+.button
+{
+	cursor:pointer;
+	background:#0c0b24;
+	color:white;
+	text-align:center;
+}
+/*-----------------------Enquiries page (DD)-----------------------*/

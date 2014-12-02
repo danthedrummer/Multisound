@@ -8,7 +8,24 @@
 		/>
 		<script src="js/jq.js"></script>
 		<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    
+		<script>
+			//---------------DD-------------
+			function onBlur(field) 
+			{
+				if (field.value == '') 
+				{
+					field.value = field.defaultValue;
+				}
+				
+			}
+			function onFocus(field) 
+			{
+				if (field.value == field.defaultValue) 
+				{
+					field.value = '';
+				}
+			}
+			//---------------DD-------------
     	</script>
 
 	
@@ -42,9 +59,64 @@
 							<div id="main">				<!--main content-->
 							<div id="insidemain">
 								
-
-
 								<h2 class="flag"> ENQUIRIES </h2>		<!--inside main content -->
+								
+								<div id="contactDiv">
+									If you would like to contact us for more information about <br/>our venue please fill out the form linked below:
+										<div id="contactButton">
+											<form action="#contactclick">
+											<input id="contactclick" class="button" type="" value="Contact Form">
+											</form>
+										</div>
+								</div>
+								<div id="bookingsDiv">
+									If you would like to enquire about booking the venue for a <br/>performance then please fill out the form linked below:
+										<div id="bookingsButton">
+											<form action="#bookingsclick">
+											<input id="bookingsclick" class="button" type="" value="Bookings Form">
+											</form>	
+										</div>
+								</div>	
+					
+								
+								<div id="contactForm">									
+									<form class="form" action="#" id="contact">
+									<h2>Contact Us</h2>
+									<label>Name: *</label>
+										<input type="text" id="nameContact" placeholder="Name"/><br><br/>
+									<label>Email: *</label>
+										<input type="text" id="emailContact" placeholder="Email"/><br><br/>
+									<label>Comments: *</label>
+										<textarea cols="30" rows="6" id="commentsContact" name="comments" onblur="onBlur(this)" onfocus="onFocus(this)" >Additional Comments...
+										</textarea>
+									<input type="checkbox" name="newsSubContact" value="newsSubContact" class="bookingsButtons" checked>Would you like to subscribe to our monthly newsletter?<br></br>
+									<input type="button" id="sendContact" value="Send"/>
+									<input type="button" id="cancel" value="Cancel"/>
+									<br/>
+									</form>
+								</div>								
+								
+								<div id="bookingsForm">
+									<form class="form" action="#" id="bookings">
+									<h2>Bookings</h2>
+									<label>Name: *</label>
+										<input type="text" id="nameBookings" placeholder="Name"/><br><br/>
+									<label>Email: *</label>
+										<input type="text" id="emailBookings" placeholder="Email"/><br><br/>
+									<label>Act Type: *</label><br><br/>
+										<input type="radio" name="act" class="bookingsButtons" checked/>Band
+										<input type="radio" name="act" class="bookingsButtons"/>Theatre<br><br/>
+									<label>Desired Date: *</label>
+										<input type="text" id="desiredDateBookings" placeholder="dd/mm/yy"/><br><br/>
+									<label>Additional Information:</label>
+										<textarea cols="30" rows="6" id="addInfoBookings" name="addInfoBookings" onblur="onBlur(this)" onfocus="onFocus(this)" >Additional Information...
+										</textarea>
+									<input type="checkbox" name="newsSub" value="newsSub" class="bookingsButtons" checked>Would you like to subscribe to our monthly newsletter?<br></br>	
+									<input type="button" id="sendBookings" value="Send"/>
+									<input type="button" id="cancel" value="Cancel"/>
+									<br><br/>
+									</form>
+								</div>
 								
 							</div>
 							<div id="side">
@@ -157,6 +229,16 @@
 			$("#newsletterdiv").fadeIn(1000);
 			$("#newsletterdiv").css("display", "block");
 			});
+			
+				$("#contactclick").click(function(){
+				$("#contactForm").fadeIn(1000);
+				$("#contactForm").css("display", "block");
+				});
+			
+					$("#bookingsclick").click(function(){
+					$("#bookingsForm").fadeIn(1000);
+					$("#bookingsForm").css("display", "block");
+					});
 		</script>
 	</body>
 </html>

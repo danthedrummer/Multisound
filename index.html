@@ -9,13 +9,32 @@
 		<script src="js/jq.js"></script>
 		<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     
-    	</script>
+    	<script>
+			//---------------DD-------------
+			function onBlur(field) 
+			{
+				if (field.value == '') 
+				{
+					field.value = field.defaultValue;
+				}
+				
+			}
+			function onFocus(field) 
+			{
+				if (field.value == field.defaultValue) 
+				{
+					field.value = '';
+				}
+			}
+			//---------------DD-------------
+		</script>
 
 	
 	</head>
-	<body>		
+	<body onLoad="greet()">		
 	<div id="top"></div>
 		<div id="wrapper">
+		
 			<div id="header">		<!--header-->
 				<a class="menu" href="#bottom">bottom</a>				
 					<img id="transparent" src="images/transparent.png" usemap="#newsletter" alt="Newsletter"/>
@@ -158,6 +177,11 @@
 				
 			<div id="bottom">
 			</div>
+			
+			<div id="greetingParent">
+				<h2 id="greetingMessage"></h2>				
+							
+			</div>
 
 				<script> $(function() {
 			  $('a[href*=#]:not([href=#])').click(function() {
@@ -180,6 +204,39 @@
 			$("#newsletterdiv").fadeIn(1000);
 			$("#newsletterdiv").css("display", "block");
 			});
+			
+				$("#contactclick").click(function(){
+				$("#contactForm").fadeIn(1000);
+				$("#contactForm").css("display", "block");
+				});
+			
+					$("#bookingsclick").click(function(){
+					$("#bookingsForm").fadeIn(1000);
+					$("#bookingsForm").css("display", "block");
+					});
+			
+				
+			function greet()
+			{	
+				var greetingMessage = document.getElementById("greetingMessage");					
+				var today = new Date();
+				var hh = today.getHours();
+				
+				var hi = "Good Morning";
+				if(hh>11&&hh<17)
+				{
+					hi = "Good Afternoon";
+				}
+				else if(hh>17)
+				{
+					hi = "Good Evening";
+				}
+							
+				greetingMessage.innerHTML = hi;
+				
+				$( "#greetingParent" ).animate({ "left": "-50px" }, 800 );
+				$( "#greetingParent" ).delay(1500).animate({ "bottom": "-200px" }, 1000 );												  
+			}
 		</script>
 	</body>
 </html>
