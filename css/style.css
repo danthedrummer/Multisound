@@ -579,6 +579,118 @@ a.hovertext:hover, a.hovertext:active {
 
 /*-----------------------(DOS)---------------------------------*/
 
+/*facilities page starts ID*/
+.fac1
+{
+float:left;
+width:100%;
+min-height:100px;
+}
+.fac2
+{
+float:right;
+width:100%;
+min-height:100px;
+}
+.headleft
+{
+float:left;
+text-decoration:underline;
+color:#27a3e1;
+padding-left:15px;
+font-size:125%;
+font-Weight:bold;
+}
+.headright
+{
+float:right;
+text-decoration:underline;
+color:#27a3e1;
+font-size:125%;
+font-Weight:bold;
+}
+.facimg1
+{
+float:left;
+}
+.facimg2
+{
+float:right;
+padding-left:15px;
+}
+.facdesc1
+{
+float:right;
+width:75%;
+text-align:justify;
+padding-left:15px;
+}
+.facdesc1
+{
+float:left;
+width:75%;
+text-align:justify;
+}
+.confec
+{
+list-style-type: square;
+float:left;
+padding-left:125px;
+}
+.space
+{
+padding-top:20px;
+}
+.space2
+{
+padding-top:30px;
+}
+.confec2
+{
+float:left;
+list-style-type: square;
+padding-left:100px;
+}
+.none
+{
+float:none;
+}
+/*facilities page ends ID*/
+/*Services page starts ID*/
+.serhead
+{
+float:left;
+text-decoration:underline;
+color:#27a3e1;
+clear:left;
+padding-left:20px;
+font-Weight:bold;
+}
+.serpar
+{
+float:left;
+clear:left;
+padding-left:10px;
+text-align:justify;
+}
+.seranchor
+{
+display: inline !important;
+font-weight: normal !important;
+color:#27a3e1 !important;
+background-color: transparent !important;
+text-align: justify !important;
+text-decoration: underline !important;
+text-transform: none !important;
+float:left !important;
+width:150px !important;
+}
+.seranchor:hover
+{
+color:white !important;
+}
+/*Services page ends ID*/
+
 /*-----------------------Enquiries page (DD)-----------------------*/
 textarea:focus {
   color: black;
