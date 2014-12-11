@@ -699,7 +699,14 @@ textarea:focus {
 textarea {
   color: #979797;
 }
-
+input:focus[type=date]
+{
+	color: black
+}
+input[type=date]
+{
+	color: #979797;
+}
 
 #contactDiv
 {
