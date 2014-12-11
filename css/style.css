@@ -98,8 +98,7 @@ to function (Doesn't seem to work if the orignal image is in CSS)*/
 }
 #insidemain
 {
-	background: rgba(5,5,16,0.40);
-	background-image: url('../images/heartbeat.png');
+	background: black;
 	width: 70%;
 	color: white;
 	text-align:left;
@@ -589,12 +588,16 @@ a.hovertext:hover, a.hovertext:active {
 float:left;
 width:100%;
 min-height:100px;
+padding-top:20px;
+padding-bottom:20px;
 }
 .fac2
 {
 float:right;
 width:100%;
 min-height:100px;
+padding-top:10px;
+padding-bottom:20px;
 }
 .headleft
 {
@@ -645,10 +648,14 @@ padding-bottom:40px;
 .space
 {
 padding-top:20px;
+padding-left:10px;
+padding-right:10px;
 }
 .space2
 {
 padding-top:30px;
+padding-left:10px;
+padding-right:10px;
 }
 .confec2
 {
