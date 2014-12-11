@@ -102,10 +102,20 @@ to function (Doesn't seem to work if the orignal image is in CSS)*/
 	width: 70%;
 	color: white;
 	text-align:left;
-	padding:10px;
-	padding-left:45px;
 	margin: 1% auto;
 	float:left; 
+}
+.mainhome
+{
+	padding-top: 10px;
+	padding-left: 20px;
+	line-height: 1.25em;
+}
+.mainfac
+{
+	padding-top: 10px;
+	padding-left: 45px;
+	line-height: 1.25em;
 }
 #side 
 {
@@ -324,6 +334,8 @@ h2:after {
 	-moz-box-shadow: 0 0 5px 5px #27a3e1;
 	-webkit-box-shadow: 0 0 5px 5px #27a3e1;
 	box-shadow: 0 0 5px 5px #27a3e1;
+	padding:10px;
+	margin:10px;
 }
 .shadowbox2:link, .shadowbox:visited{
 	width:255px;
@@ -506,13 +518,15 @@ height:160px;
 }
 
 .blog{
-	text-align: justify;
 	font-size: 18px;
+	background: linear-gradient(#383838,black);
+	padding:10px;
 }
 
 .blogimages{
 	height:200px;
 	width:300px;
+	padding:10px;
 }
 
 .postdate{
@@ -520,7 +534,40 @@ height:160px;
 }
 															/*Glenn Blog 27112014*/
 
-
+.readmore {
+	-moz-box-shadow: 0px 10px 14px -7px black;
+	-webkit-box-shadow: 0px 10px 14px -7px black;
+	box-shadow: 0px 10px 14px -7px #0c0b24;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, black), color-stop(1, #383838));
+	background:-moz-linear-gradient(top, black 5%, #383838 100%);
+	background:-webkit-linear-gradient(top, black 5%, #383838 100%);
+	background:-o-linear-gradient(top, black 5%, #383838 100%);
+	background:-ms-linear-gradient(top, black 5%, #383838 100%);
+	background:linear-gradient(to bottom, black 5%, #383838 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='black', endColorstr='#383838',GradientType=0);
+	background-color:black;
+	display:inline-block;
+	cursor:pointer;
+	font-weight:bold;
+	margin-bottom:10px;
+	text-shadow:0px 1px 0px #3d768a;
+	font-size: 10px;
+}
+.readmore:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #383838), color-stop(1, black));
+	background:-moz-linear-gradient(top, #383838 5%, black 100%);
+	background:-webkit-linear-gradient(top, #383838 5%, black 100%);
+	background:-o-linear-gradient(top, #383838 5%, black 100%);
+	background:-ms-linear-gradient(top, #383838 5%, black 100%);
+	background:linear-gradient(to bottom, #383838 5%, black 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#383838', endColorstr='black',GradientType=0);
+	background-color:#383838;
+	color: #ffffff;
+}
+.readmore:active {
+	position:relative;
+	top:1px;
+}
 /*-----------------------gallery.html (DOS)---------------------------------*/
 .gallerybox{
 	width:690px;
