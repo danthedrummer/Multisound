@@ -354,6 +354,10 @@ h2:after {
 	width:90%;	
 	background-image: url('../images/ad-hover.png');
 }
+#advertTransparent
+{
+	opacity:0;
+}
 .shadowbox1{
 	float: bottom-right;
 	border: 1px solid #063;
