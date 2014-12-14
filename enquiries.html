@@ -37,7 +37,7 @@
 				<a class="menu" href="#bottom">bottom</a>				
 					<img id="transparent" src="images/header-bg.jpg" usemap="#newsletter" alt="Newsletter"/>
 					<map name="newsletter">
-					<area id="newsmap" shape="rect" coords="619,105,863,140" href="javascript:void(null);" onClick="#newsletterdiv" alt="Newsletter"/>
+					<area id="newsmap" shape="rect" coords="619,105,863,140" href="javascript:void(null);" onClick="newsletterdiv" alt="Newsletter" />
 					</map>
 			</div>	
 				<div id="navbar">	<!--nav bar-->
@@ -50,7 +50,7 @@
 						<li><a href="enquiries.html">ENQUIRIES</a></li>	
 					</ul>
 						<div id="smedia">
-							<a class= "smedia" href="http://www.twitter.com"  target="_blank"><img alt="Twitter" src="images/social-media/twitter.png"style /></a>
+							<a class= "smedia" href="http://www.twitter.com"  target="_blank"><img alt="Twitter" src="images/social-media/twitter.png" style /></a>
 							<a class= "smedia" href="http://www.facebook.com" target="_blank"><img alt="Facebook" src="images/social-media/facebook.png" style /></a>
 							<a class= "smedia" href="http://www.linkedin.com" target="_blank"><img alt="linkedIn" src="images/social-media/linkedin.png" style /></a>
 							<a class= "smedia" href="http://www.instagram.com" target="_blank"><img alt="Instagram" src="images/social-media/insta.png" style /></a>
@@ -64,7 +64,7 @@
 									If you would like to contact us for more information about <br/>our venue please fill out the form linked below:
 										<div id="contactButton">
 											<form action="#contactclick">
-											<input id="contactclick" class="button" type="" value="Contact Form">
+											<input id="contactclick" class="button" value="Contact Form">
 											</form>
 										</div>
 								</div>
@@ -72,7 +72,7 @@
 									If you would like to enquire about booking the venue for a <br/>performance then please fill out the form linked below:
 										<div id="bookingsButton">
 											<form action="#bookingsclick">
-											<input id="bookingsclick" class="button" type="" value="Bookings Form">
+											<input id="bookingsclick" class="button" value="Bookings Form">
 											</form>	
 										</div>
 								</div>	
@@ -88,9 +88,9 @@
 									<label>Comments: *</label>
 										<textarea cols="30" rows="6" id="commentsContact" name="comments" onblur="onBlur(this)" onfocus="onFocus(this)" >Additional Comments...
 										</textarea>
-									<input type="checkbox" name="newsSubContact" value="newsSubContact" class="bookingsButtons" checked>Would you like to subscribe to our monthly newsletter?<br></br>
+									<input type="checkbox" name="newsSubContact" value="newsSubContact" class="bookingsButtons" checked>Would you like to subscribe to our monthly newsletter?<br><br/>
 									<input type="button" id="sendContact" value="Send"/>
-									<input type="button" id="cancel" value="Cancel"/>
+									<input type="button" id="cancel1" value="Cancel"/>
 									<br/>
 									</form>
 								</div>								
@@ -106,13 +106,13 @@
 										<input type="radio" name="act" class="bookingsButtons" checked/>Band
 										<input type="radio" name="act" class="bookingsButtons"/>Theatre<br><br/>
 									<label>Desired Date: *</label>
-										<input type="date" id="desiredDateBookings" placeholder="dd/mm/yy"/><br><br/>
+										<input type="date" id="desiredDateBookings" /><br><br/>
 									<label>Additional Information:</label>
 										<textarea cols="30" rows="6" id="addInfoBookings" name="addInfoBookings" onblur="onBlur(this)" onfocus="onFocus(this)" >Additional Information...
 										</textarea>
-									<input type="checkbox" name="newsSub" value="newsSub" class="bookingsButtons" checked>Would you like to subscribe to our monthly newsletter?<br></br>	
+									<input type="checkbox" name="newsSub" value="newsSub" class="bookingsButtons" checked>Would you like to subscribe to our monthly newsletter?<br><br/>	
 									<input type="button" id="sendBookings" value="Send"/>
-									<input type="button" id="cancel" value="Cancel"/>
+									<input type="button" id="cancel2" value="Cancel"/>
 									<br><br/>
 									</form>
 								</div>
@@ -161,9 +161,7 @@
 									<br>
 									<a class="menu" href="mailto:info@multisoundvenue.ie" ><img alt="Contact Us" src="images/contact-us.png" /></a>	
 							</div>
-							<div id="footerpadding2">
-								<h4 class="footer"> </h4>							
-							</div>
+							<div id="footerpadding2">   </div>
 							<div id="footerpadding3">	</div>												
 							<div id="footerpadding4">
 								<ul>

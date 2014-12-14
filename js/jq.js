@@ -46,13 +46,13 @@ $(document).ready(function() {
 setTimeout(popup, 3000);
 function popup() {
 }
-$("#cancel").click(function() {
+$("#cancel1").click(function() {
 $(this).parent().parent().hide();
 });
 $("#contactclick").click(function() {
 $("#contactForm").css("display", "block");
 });
-$("#contact #cancel").click(function() {
+$("#contact #cancel1").click(function() {
 $(this).parent().parent().hide();
 });
 // Contact form popup send-button click event.
@@ -86,13 +86,13 @@ $(document).ready(function() {
 setTimeout(popup, 3000);
 function popup() {
 }
-$("#cancel").click(function() {
+$("#cancel2").click(function() {
 $(this).parent().parent().hide();
 });
 $("#bookingsclick").click(function() {
 $("#bookingsForm").css("display", "block");
 });
-$("#bookings #cancel").click(function() {
+$("#bookings #cancel2").click(function() {
 $(this).parent().parent().hide();
 });
 // Bookings form popup send-button click event.
